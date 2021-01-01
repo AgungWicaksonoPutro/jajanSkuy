@@ -159,7 +159,6 @@ function buy(){
         timer: 1500
     }).then((res)=>{
         let name = localStorage.getItem('name')
-        let id = localStorage.getItem('id')
         let cartItem = ''
         cartItem += `Pesananmu:`
         cart.items.forEach(a => {
@@ -171,7 +170,6 @@ function buy(){
         })
         if (liff.isInClient()){
             liff.sendMessages([{
-                'to': `${id}`,
                 'type': 'text',
                 'text': `${cartItem}`
             }]).then(function () {
@@ -187,7 +185,6 @@ function buy(){
 
 function handleMessage(){
     let name = localStorage.getItem('name')
-    let id = localStorage.getItem('id')
     let cartItem = ''
     cartItem += `Hai kak ${name} klik buy untuk jajan di JajanSkuy \n`
     cartItem += `Pesananmu:`
@@ -197,7 +194,6 @@ function handleMessage(){
         `
     })
     liff.sendMessages([{
-        'to' : `${id}`,
         'type': 'text',
         'text': `${cartItem}`
     }]).then(function () {
