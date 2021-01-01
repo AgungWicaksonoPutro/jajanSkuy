@@ -167,12 +167,13 @@ function handleMessage(){
     let name = localStorage.getItem('name')
     let id = localStorage.getItem('id')
     let cartItem = ''
-    cartItem += `Hai kak ${name} klik buy untuk jajan di JajanSkuy \n`
+    cartItem += `Hai kak ${name} \n`
     cartItem += `Pesananmu:`
     cart.items.forEach(a=>{
         cartItem += `
         ${a.name} ${a.qty}x = Rp.${a.total}
         `
+        cart.items += `Jangan sampai melewatkan kenikamatan dari sajian kami &#128525;`
     })
     liff.sendMessages([{
         'to' : `${id}`,
