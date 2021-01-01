@@ -130,12 +130,32 @@ function logout(){
 }
 
 function buy(){
-    toggle()
     Swal.fire({
         icon: 'success',
         title: 'Mohon Ditunggu Pesanannmu Segera Diantar',
         showConfirmButton: false,
         timer: 1500
+    }).then((res)=>{
+        let name = localStorage.getItem('name')
+        let id = localStorage.getItem('id')
+        let cartItem = ''
+        cartItem += `Pesananmu:`
+        cart.items.forEach(a => {
+            cartItem += `
+            ${a.name} ${a.qty}x = Rp.${a.total}
+            `
+        cartItem += `Total yang harus kamu bayar Rp.${cart.totalPrice} \n`
+        cartItem += `Terimakasih kak ${name} sudah jajan di JajanSkuy`
+        })
+        liff.sendMessages([{
+            'to': `${id}`,
+            'type': 'text',
+            'text': `${cartItem}`
+        }]).then(function () {
+            toggle()
+        }).catch(function (error) {
+            window.alert('Error sending message: ' + error);
+        });
     })
 }
 
@@ -143,14 +163,13 @@ function handleMessage(){
     let name = localStorage.getItem('name')
     let id = localStorage.getItem('id')
     let cartItem = ''
+    cartItem += `Hai kak ${name} klik buy untuk jajan di JajanSkuy \n`
     cartItem += `Pesananmu:`
     cart.items.forEach(a=>{
         cartItem += `
         ${a.name} ${a.qty}x = Rp.${a.total}
         `
     })
-    cartItem += `Dengan total tagihan Rp.${cart.totalPrice} \n`
-    cartItem += `Terimakasih ${name} sudah jajan di JajanSkuy`
     liff.sendMessages([{
         'to' : `${id}`,
         'type': 'text',
