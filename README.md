@@ -11,64 +11,60 @@
   </p>
 </p>
 
-![Image Banner](https://github.com/AgungWicaksonoPutro/jajanSkuy/blob/main/img/Screenshot_20210101-210915_LINE.jpg | 100px)
+![Image Banner](https://github.com/AgungWicaksonoPutro/jajanSkuy/blob/main/img/Screenshot_20210101-210915_LINE.jpg)
 
 ## Table of Contents
 
 - [About the Project](#about-the-project)
   - [Built With](#built-with)
 - [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
   - [Installation](#installation)
 - [Acknowledgements](#acknowledgements)
-- [Resource](#Resource)
 
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
 
-The point of sale or point of purchase is the time and place where a retail transaction is completed. At the point of sale, the merchant calculates the amount owed by the customer, indicates that amount, may prepare an invoice for the customer, and indicates the options for the customer to make payment.
+Jajanskuy is a sales application based on LINE LIFF, a frontend framework that allows web-based applications to run on LINE. LINE LIFF runs on top of the LINE Messaging API. The request data obtained will be sent to the server that we have created for further processing.
 
-![Image Banner](https://github.com/AgungWicaksonoPutro/FrontEnd-POS-Apps-Icafe/blob/master/icafe.png)
-![Image Banner](https://github.com/AgungWicaksonoPutro/FrontEnd-POS-Apps-Icafe/blob/master/icafe1.png)
-![Image Banner](https://github.com/AgungWicaksonoPutro/FrontEnd-POS-Apps-Icafe/blob/master/icafe3.png)
-![Image Banner](https://github.com/AgungWicaksonoPutro/FrontEnd-POS-Apps-Icafe/blob/master/icafe4.png)
+![Image Banner](https://github.com/AgungWicaksonoPutro/jajanSkuy/blob/main/img/Browser%20Login.JPG)
+![Image Banner](https://github.com/AgungWicaksonoPutro/jajanSkuy/blob/main/img/Display%20Login.JPG)
+![Image Banner](https://github.com/AgungWicaksonoPutro/jajanSkuy/blob/main/img/Display%20browser.JPG)
+![Image Banner](https://github.com/AgungWicaksonoPutro/jajanSkuy/blob/main/img/Menu%20in%20browser.JPG)
+![Image Banner](https://github.com/AgungWicaksonoPutro/jajanSkuy/blob/main/img/Screenshot_20210101-210925_LINE.jpg)
+![Image Banner](https://github.com/AgungWicaksonoPutro/jajanSkuy/blob/main/img/Screenshot_20210101-210934_LINE.jpg)
+![Image Banner](https://github.com/AgungWicaksonoPutro/jajanSkuy/blob/main/img/Screenshot_20210101-210949_LINE.jpg)
+![Image Banner](https://github.com/AgungWicaksonoPutro/jajanSkuy/blob/main/img/Screenshot_20210101-211006_LINE.jpg)
+![Image Banner](https://github.com/AgungWicaksonoPutro/jajanSkuy/blob/main/img/Screenshot_20210101-211012_LINE.jpg)
+![Image Banner](https://github.com/AgungWicaksonoPutro/jajanSkuy/blob/main/img/Screenshot_20210101-212123_LINE.jpg)
+![Image Banner](https://github.com/AgungWicaksonoPutro/jajanSkuy/blob/main/img/Screenshot_20210101-212133_LINE.jpg)
 
 Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue.
 
 ### Built With
 
-- [Node.js](https://nodejs.org/en/)
-- [Vue.js](https://docs.vuejs.id/)
-- [Bootstrap-vue](https://bootstrap-vue.org/)
+- [LINE LIFF](https://developers.line.biz/en/)
+- [Bootstrap](https://getbootstrap.com/)
 
 ### Installation
 
 1. Clone the repo
 
 ```sh
-git clone https://github.com/AgungWicaksonoPutro/FrontEnd-POS-Apps-Icafe.git
+git clone https://github.com/AgungWicaksonoPutro/jajanSkuy
 ```
 
-2. Install NPM packages
+2. Setup Line LIFF id
 
 ```sh
-npm install
-```
-
-3. Compiles and hot-reloads for development
-```sh
-npm run serve
+Change Line  LIFF in liffsetup.js
 ```
 
 <!-- ACKNOWLEDGEMENTS -->
 
 ## Acknowledgements
 
-- [Axios](https://www.npmjs.com/package/axios)
-- [Vuex](https://vuex.vuejs.org/)
-- [Vue-Router](https://router.vuejs.org/)
-
+- [Sweetalert](https://sweetalert2.github.io/)
 ---
 
 ## Resource
