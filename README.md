@@ -47,7 +47,7 @@ Of course, no one template will serve all projects since your needs may be diffe
 ### Built With
 
 - [LINE LIFF](https://developers.line.biz/en/)
-- [Bootstrap](https://getbootstrap.com/)
+- [Heroku](https://dashboard.heroku.com/)
 
 ### Installation
 
@@ -68,6 +68,7 @@ Change Line  LIFF in liffsetup.js
 ## Acknowledgements
 
 - [Sweetalert](https://sweetalert2.github.io/)
+- [Bootstrap](https://getbootstrap.com/)
 ---
 
 ## Resource
