@@ -11,7 +11,7 @@
   </p>
 </p>
 
-![Image Banner](https://github.com/AgungWicaksonoPutro/jajanSkuy/blob/main/img/Screenshot_20210101-210915_LINE.jpg)
+![Image Banner](https://github.com/AgungWicaksonoPutro/jajanSkuy/blob/main/img/Screenshot_20210101-210915_LINE.jpg | 100px)
 
 ## Table of Contents
 
