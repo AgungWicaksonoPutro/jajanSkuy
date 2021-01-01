@@ -78,7 +78,7 @@ function getprofileInfo() {
             console.log(res.pictureUrl)
             localStorage.setItem('name', res.displayName);
             localStorage.setItem('id', res.userId);
-            if(res.pictureUrl === '' && res.displayName === ''){
+            if(res.pictureUrl === undefined && res.displayName === undefined){
                 const setImg = `
                     <div id="setImg" class="btn-custom img-container me-1">
                         <img onclick="dropDown();" class="dropbtn" src="https://cdn3.iconfinder.com/data/icons/avatars-9/145/Avatar_Cat-512.png" alt="">
@@ -86,7 +86,7 @@ function getprofileInfo() {
                     <div>Anonymous</div>
                 `
                 $('.nav-item').html(setImg)
-            } else if(res.pictureUrl === ''){
+            } else if (res.pictureUrl === undefined){
                 const setImg = `
                     <div id="setImg" class="btn-custom img-container me-1">
                         <img onclick="dropDown();" class="dropbtn" src="https://cdn3.iconfinder.com/data/icons/avatars-9/145/Avatar_Cat-512.png" alt="">
@@ -94,7 +94,7 @@ function getprofileInfo() {
                     <div>${res.displayName}</div>
                 `
                 $('.nav-item').html(setImg)
-            } else if (res.displayName === '' ){
+            } else if (res.displayName === undefined ){
                 const setImg = `
                     <div id="setImg" class="btn-custom img-container me-1">
                         <img onclick="dropDown();" class="dropbtn" src="${res.pictureUrl}" alt="">
