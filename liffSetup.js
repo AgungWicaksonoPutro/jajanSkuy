@@ -77,13 +77,39 @@ function getprofileInfo() {
         .then((res) => {
             localStorage.setItem('name', res.displayName);
             localStorage.setItem('id', res.userId);
-            const setImg = `
-                <div id="setImg" class="btn-custom img-container me-1">
-                    <img onclick="dropDown();" class="dropbtn" src="${res.pictureUrl}" alt="">
-                </div>
-                <div>${res.displayName}</div>
-            `
-            $('.nav-item').html(setImg)
+            if(res.pictureUrl === '' && res.displayName === ''){
+                const setImg = `
+                    <div id="setImg" class="btn-custom img-container me-1">
+                        <img onclick="dropDown();" class="dropbtn" src="https://cdn3.iconfinder.com/data/icons/avatars-9/145/Avatar_Cat-512.png" alt="">
+                    </div>
+                    <div>Anonymous</div>
+                `
+                $('.nav-item').html(setImg)
+            } else if(res.pictureUrl === ''){
+                const setImg = `
+                    <div id="setImg" class="btn-custom img-container me-1">
+                        <img onclick="dropDown();" class="dropbtn" src="https://cdn3.iconfinder.com/data/icons/avatars-9/145/Avatar_Cat-512.png" alt="">
+                    </div>
+                    <div>${res.displayName}</div>
+                `
+                $('.nav-item').html(setImg)
+            } else if (res.displayName === '' ){
+                const setImg = `
+                    <div id="setImg" class="btn-custom img-container me-1">
+                        <img onclick="dropDown();" class="dropbtn" src="${res.pictureUrl}" alt="">
+                    </div>
+                    <div>Anonymous</div>
+                `
+                $('.nav-item').html(setImg)
+            } else {
+                const setImg = `
+                    <div id="setImg" class="btn-custom img-container me-1">
+                        <img onclick="dropDown();" class="dropbtn" src="${res.pictureUrl}" alt="">
+                    </div>
+                    <div>${res.displayName}</div>
+                `
+                $('.nav-item').html(setImg)
+            }
         })
         .catch((err) => {
             console.log(err)
