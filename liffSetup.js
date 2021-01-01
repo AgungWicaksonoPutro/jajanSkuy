@@ -92,7 +92,7 @@ function getprofileInfo() {
 function controlUser(){
     if(!liff.isInClient()){
         document.getElementById('close-window').classList.add('hidden')
-        // document.getElementById('send-message').classList.add('hidden')
+        document.getElementById('send-message').classList.add('hidden')
     } else {
         document.getElementById('logout').classList.add('hidden')
     }
@@ -147,15 +147,19 @@ function buy(){
         cartItem += `Total yang harus kamu bayar Rp.${cart.totalPrice} \n`
         cartItem += `Terimakasih kak ${name} sudah jajan di JajanSkuy`
         })
-        liff.sendMessages([{
-            'to': `${id}`,
-            'type': 'text',
-            'text': `${cartItem}`
-        }]).then(function () {
+        if (!liff.isInClient()){
+            liff.sendMessages([{
+                'to': `${id}`,
+                'type': 'text',
+                'text': `${cartItem}`
+            }]).then(function () {
+                toggle()
+            }).catch(function (error) {
+                window.alert('Error sending message: ' + error);
+            });
+        } else {
             toggle()
-        }).catch(function (error) {
-            window.alert('Error sending message: ' + error);
-        });
+        }
     })
 }
 
