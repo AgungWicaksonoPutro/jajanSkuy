@@ -28,18 +28,18 @@
 Jajanskuy is a sales application based on LINE LIFF, a frontend framework that allows web-based applications to run on LINE. LINE LIFF runs on top of the LINE Messaging API. The request data obtained will be sent to the server that we have created for further processing.
 
 
-<img align="left" src="https://github.com/AgungWicaksonoPutro/jajanSkuy/blob/main/img/logo.JPG" width="300">
-<img align="left" src="https://github.com/AgungWicaksonoPutro/jajanSkuy/blob/main/img/Browser%20Login.JPG" width="300">
-<img align="left" src="https://github.com/AgungWicaksonoPutro/jajanSkuy/blob/main/img/Display%20Login.JPG" width="300">
-<img align="left" src="https://github.com/AgungWicaksonoPutro/jajanSkuy/blob/main/img/Display%20browser.JPG" width="300">
-<img align="left" src="https://github.com/AgungWicaksonoPutro/jajanSkuy/blob/main/img/Menu%20in%20browser.JPG" width="300">
-<img align="left" src="https://github.com/AgungWicaksonoPutro/jajanSkuy/blob/main/img/Screenshot_20210101-210925_LINE.jpg" width="300">
-<img align="left" src="https://github.com/AgungWicaksonoPutro/jajanSkuy/blob/main/img/Screenshot_20210101-210934_LINE.jpg" width="300">
-<img align="left" src="https://github.com/AgungWicaksonoPutro/jajanSkuy/blob/main/img/Screenshot_20210101-210949_LINE.jpg" width="300">
-<img align="left" src="https://github.com/AgungWicaksonoPutro/jajanSkuy/blob/main/img/Screenshot_20210101-211006_LINE.jpg" width="300">
-<img align="left" src="https://github.com/AgungWicaksonoPutro/jajanSkuy/blob/main/img/Screenshot_20210101-211012_LINE.jpg" width="300">
-<img align="left" src="https://github.com/AgungWicaksonoPutro/jajanSkuy/blob/main/img/Screenshot_20210101-212123_LINE.jpg" width="300">
-<img align="left" src="https://github.com/AgungWicaksonoPutro/jajanSkuy/blob/main/img/Screenshot_20210101-212133_LINE.jpg" width="300">
+<img src="https://github.com/AgungWicaksonoPutro/jajanSkuy/blob/main/img/logo.JPG" width="300">
+<img src="https://github.com/AgungWicaksonoPutro/jajanSkuy/blob/main/img/Browser%20Login.JPG" width="300">
+<img src="https://github.com/AgungWicaksonoPutro/jajanSkuy/blob/main/img/Display%20Login.JPG" width="300">
+<img src="https://github.com/AgungWicaksonoPutro/jajanSkuy/blob/main/img/Display%20browser.JPG" width="300">
+<img src="https://github.com/AgungWicaksonoPutro/jajanSkuy/blob/main/img/Menu%20in%20browser.JPG" width="300">
+<img src="https://github.com/AgungWicaksonoPutro/jajanSkuy/blob/main/img/Screenshot_20210101-210925_LINE.jpg" width="300">
+<img src="https://github.com/AgungWicaksonoPutro/jajanSkuy/blob/main/img/Screenshot_20210101-210934_LINE.jpg" width="300">
+<img src="https://github.com/AgungWicaksonoPutro/jajanSkuy/blob/main/img/Screenshot_20210101-210949_LINE.jpg" width="300">
+<img src="https://github.com/AgungWicaksonoPutro/jajanSkuy/blob/main/img/Screenshot_20210101-211006_LINE.jpg" width="300">
+<img src="https://github.com/AgungWicaksonoPutro/jajanSkuy/blob/main/img/Screenshot_20210101-211012_LINE.jpg" width="300">
+<img src="https://github.com/AgungWicaksonoPutro/jajanSkuy/blob/main/img/Screenshot_20210101-212123_LINE.jpg" width="300">
+<img src="https://github.com/AgungWicaksonoPutro/jajanSkuy/blob/main/img/Screenshot_20210101-212133_LINE.jpg" width="300">
 
 Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue.
 
