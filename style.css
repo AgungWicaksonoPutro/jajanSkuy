@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.error{
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 50%;
+    font-size: xx-large;
+}
+
+.error i {
+    color: red;
+}
+
+.error-validasi{
+    max-width: 30%;
+    padding: 10px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container-fluid{
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.container-fluid#blur.active{
+    filter: blur(20px);
+    user-select: none;
+    pointer-events: none;
+}
+
+#modal{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+    padding: 30px;
+    box-shadow: 0px 5px 30px rgba(0,0,0,.30);
+    background-color: rgb(255, 255, 255);
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+#modal .btn{
+    display: block;
+    width: 100%;
+}
+
+#modal .row i{
+    font-size: 20px;
+}
+
+#modal.active{
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.navbar-brand{
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 0 auto;
+}
+
+.btn-custom{
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+.btn-custom:hover, .btn-custom:focus{
+    border: none;
+    outline: none;
+}
+
+.dropbtn {
+  border: none;
+  cursor: pointer;
+}
+
+.button-control button{
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+
+.button-control i{
+    font-size: 24px;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+    font-size: 20px;
+  display: none;
+  position: absolute;
+  top: 50px;
+  background-color:#f6ca2d;
+  min-width: 250px;
+  min-height: 40px;
+  overflow: auto;
+  border-radius: 15px 40px 30px 40px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content div {
+  color: black;
+  cursor: pointer;
+}
+
+.dropdown a:hover {
+    background-color: rgba(199, 191, 191, 0.226);
+}
+
+.show {
+    display: block;
+}
+
+.img-container{
+    width: 40px;
+    height: 40px;
+}
+
+.img-container img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 1px solid #f6ca2d;
+    border-radius: 50%;
+}
+
+.card{
+    width: 200px;
+    border: none;
+    position: relative;
+}
+
+.card a{
+    color: azure;
+    bottom: 10px;
+    right: 10px;
+    position: absolute;
+}
+
+.row{
+    --bs-gutter-x: 0px;
+}
+.products{
+    background-color: rgba(243, 243, 243, 0.568);
+}
+
+h3{
+    font-weight: 400;
+}
+.card-body p{
+    font-weight: 200;
+}
+.img-card{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.img-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .qty{
+    width: 15%;
+    box-shadow: inset 0px 0px 15px -3px rgba(191,191,191,0.74);
+    margin: 1px 5px;
+}
+
+.card-cart{
+    width: 95%;
+    padding: 5px;
+    position: relative;
+}
+
+.cart-img-container{
+    width: 65px;
+    height: auto;
+}
+
+.cart-img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn-controll .btn-plus, .btn-minus, .btn-show{
+    margin: 5px;
+    width: 25px;
+    height: 25px;
+    background-color:#f6ca2d;
+    border-radius: 35%;
+    cursor: pointer;
+    font-size: 12px;
+    color: cornsilk;
+}
+
+.btn-controll .fas:hover{
+    color: rgb(160, 156, 142);
+}
+
+.price-control{
+    font-weight: 400;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.cart-empty{
+    width: 175px;
+    height: auto;
+}
+
+.cart-empty img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.d-block{
+    margin: 0 auto;
+    width: 95%;
+}
+
+hr{
+    margin: 0;
+}
+
+.footer{
+    height: 10vh;
+}
+
+.hidden{
+    display: none;
+}
+
+@media only screen and (max-width: 992px){
+    .card{
+        flex-basis: 20%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .card{
+        flex-basis: 30%;
+    }
+    .card-cart{
+        margin-right: 20px;
+        width: 40%;
+        padding: 5px;
+    }
+}
+
+@media only screen and (max-width: 576px){
+    .card{
+        flex-basis: 70%;
+    }
+    .card-cart{
+        margin-left: 10px;
+        margin-right: 20px;
+        width: 85%;
+        padding: 5px;
+    }
+    .error-validasi{
+        max-width: 65%;
+    }
+    
+    .error-validasi p{
+        text-align: left;
+    }
+    
+    .error-validasi button{
+        width: 100%;
+    }
+    #modal{
+        width: 85%;
+    }
+}
