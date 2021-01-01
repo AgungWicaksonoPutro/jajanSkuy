@@ -75,6 +75,7 @@ function login(){
 function getprofileInfo() {
     liff.getProfile()
         .then((res) => {
+            console.log(res.pictureUrl)
             localStorage.setItem('name', res.displayName);
             localStorage.setItem('id', res.userId);
             if(res.pictureUrl === '' && res.displayName === ''){
