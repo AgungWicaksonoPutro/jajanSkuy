@@ -173,8 +173,8 @@ function handleMessage(){
         cartItem += `
         ${a.name} ${a.qty}x = Rp.${a.total}
         `
-        cart.items += `Jangan sampai melewatkan kenikamatan dari sajian kami &#128525;`
     })
+    cart.items += `Jangan sampai melewatkan kenikamatan dari sajian kami &#128525;`
     liff.sendMessages([{
         'to' : `${id}`,
         'type': 'text',
