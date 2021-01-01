@@ -1,28 +1,7 @@
 window.onload = () => {
-    const useNodeJS = false;   // if you are not using a node server, set this value to false
-    const defaultLiffId = "1655536452-40OE6Vzz";   // change the default LIFF value if you are not using a node server
+    const defaultLiffId = "1655536452-40OE6Vzz";
+    initializeLiffOrDie(defaultLiffId );
 
-    // DO NOT CHANGE THIS
-    let myLiffId = "";
-
-    // if node is used, fetch the environment variable and pass it to the LIFF method
-    // otherwise, pass defaultLiffId
-    if (useNodeJS) {
-        fetch('/send-id')
-            .then(function (reqResponse) {
-                return reqResponse.json();
-            })
-            .then(function (jsonResponse) {
-                myLiffId = jsonResponse.id;
-                initializeLiffOrDie(myLiffId);
-            })
-            .catch((err)=> {
-                console.log(err)
-            });
-    } else {
-        myLiffId = defaultLiffId;
-        initializeLiffOrDie(myLiffId);
-    }
 }
 
 function initializeLiffOrDie(LiffId){
@@ -165,9 +144,9 @@ function buy(){
             cartItem += `
             ${a.name} ${a.qty}x = Rp.${a.total}
             `
+        })
         cartItem += `Total yang harus kamu bayar Rp.${cart.totalPrice} \n`
         cartItem += `Terimakasih kak ${name} sudah jajan di JajanSkuy`
-        })
         if (liff.isInClient()){
             liff.sendMessages([{
                 'type': 'text',
