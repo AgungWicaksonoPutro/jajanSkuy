@@ -147,7 +147,7 @@ function buy(){
         cartItem += `Total yang harus kamu bayar Rp.${cart.totalPrice} \n`
         cartItem += `Terimakasih kak ${name} sudah jajan di JajanSkuy`
         })
-        if (!liff.isInClient()){
+        if (liff.isInClient()){
             liff.sendMessages([{
                 'to': `${id}`,
                 'type': 'text',
